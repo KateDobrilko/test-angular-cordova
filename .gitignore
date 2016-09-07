@@ -1,0 +1,6 @@
+src/node_modules/
+src/bower_components/
+build/android/plugins/
+*.xml
+build/android/platforms/
+build/android/.idea/
