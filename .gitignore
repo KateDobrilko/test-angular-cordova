@@ -4,3 +4,10 @@ build/android/plugins/
 *.xml
 build/android/platforms/
 build/android/.idea/
+build/android/node_modules/.bin/JSONStream
+build/android/node_modules/
+build/android/www/app/bower_components/
+build/android/www/app/core/
+build/android/www/app/camera/
+build/android/www/app/data/
+build/android/www/app/html/

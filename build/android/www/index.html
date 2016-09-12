@@ -1,49 +1,57 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8">
+	<title>Test Angular Cordova App</title>
+	<link rel = "stylesheet"
+				href = "app/bower_components/bootstrap/dist/css/bootstrap.css"/>
+	<link rel = "stylesheet" href = "app/app.css"/>
+	<script src="cordova.js"></script>
+	<script src = "app/bower_components/jquery/dist/jquery.js"></script>
+	<script src = "app/bower_components/angular/angular.js"></script>
+	<!--<script
+				src = "app/bower_components/angular-animate/angular-animate.js"></script>
+	<script src = "app/bower_components/angular-resource/angular-resource.js"></script>
+	<script src = "app/bower_components/angular-route/angular-route.js"></script>-->
+	<script src =
+									"app/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script
+					src = "app/bower_components/angular-gravatar/build/angular-gravatar.js"></script>
+	<!--<script src = "app/app.module.js"></script>
+	<script src = "app/app.config.js"></script>
+	<script src = "app/core/core.module.js"></script>
+	<script src = "app/core/configuration/configuration.module.js"></script>
+	<script src = "app/core/configuration/configuration.provider.js"></script>
+	<script src = "app/core/constants/constants.module.js"></script>
+	<script src = "app/core/constants/constants.provider.js"></script>
+	<script src = "app/core/localStorage/local-storage.module.js"></script>
+	<script src = "app/core/localStorage/local-storage.service.js"></script>
+	<script src = "app/core/session/session.module.js"></script>
+	<script src = "app/core/session/session.service.js"></script>
+	<script src = "app/core/constants/constants.provider.js"></script>
+	<script src = "app/core/network/network.module.js"></script>
+	<script src = "app/core/network/network.service.js"></script>
+	<script src = "app/login/login.module.js"></script>
+	<script src = "app/login/login.component.js"></script>
+	<script src = "app/camera/camera.module.js"></script>
+	<script src = "app/camera/camera.component.js"></script>
+	<script src = "app/users-list/users-list.module.js"></script>
+	<script src = "app/users-list/users-list.component.js"></script>-->
+	<script src = "app/app.js"></script>
+	<script src = "app/scripts/controllers/camera.controller.js"></script>
+	<script src = "app/scripts/controllers/login.controller.js"></script>
+	<script src = "app/scripts/controllers/users-list.controller.js"></script>
+	<script src = "app/scripts/services/local-storage.service.js"></script>
+	<script src = "app/scripts/services/network.service.js"></script>
+	<script src = "app/scripts/services/session.service.js"></script>
+	<script src = "app/scripts/services/camera.service.js"></script>
+	<script src = "app/scripts/utils/app.const.js"></script>
+	<script src = "app/scripts/utils/environment.const.js"></script>
+	<script src = "starter.js"></script>
+</head>
+<body>
+<div class = "view-container">
+	<div data-ui-view class = "view-frame"></div>
+</div>
+</body>
 </html>

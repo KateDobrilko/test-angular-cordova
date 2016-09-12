@@ -1,0 +1,45 @@
+.navigation-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.navigation {
+    display: block;
+    width: 100%;
+    list-style: none;
+    overflow: auto;
+    padding: 0;
+
+}
+
+.navigation .navigation-element {
+    width: auto;
+    float: left;
+    color: black;
+    line-height: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.navigation .navigation-element > * {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation .navigation-element.active {
+    background: grey;
+}
+
+.navigation .navigation-element:visited,
+.navigation .navigation-element:focus{
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+

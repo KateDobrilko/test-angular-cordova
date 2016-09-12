@@ -1,0 +1,23 @@
+<div class = "navigation-container">
+	<ul class = "navigation">
+		<li class = "navigation-element">
+			<a data-ui-sref = "users">Users</a>
+		</li>
+		<li class = "navigation-element  active">
+			<a data-ui-sref = "camera">Camera</a>
+		</li>
+		<li class = "navigation-element">
+			<a data-ng-click = "logOut()">Log Out</a>
+		</li>
+	</ul>
+</div>
+<div class = "container-fluid">
+	<div class = "row">
+		<div class = "col-md-2">
+			<button type = "button" class = "btn btn-success"
+							data-ng-click = "getPicture()">GET PICTURE
+			</button>
+			<img src = "{{imagePath}}" width="200"/>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,34 @@
+<div class = "page-wrapper">
+	<div class = "login-form-wrapper">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-sm-6 col-sm-offset-3 login-fields-wrapper"
+						 id = "login-fields-wrapper">
+					<form role = "form" class = "login-form">
+						<div class = "form-group">
+							<div class = "input-block">
+								<input type = "text" name = "form-susername"
+											 placeholder = "Email or username"
+											 class = "form-input email-input"
+											 data-ng-model = "userData.email"/>
+							</div>
+						</div>
+						<div class = "form-group">
+							<div class = "input-block">
+								<input type = "password"
+											 name = "form-password"
+											 placeholder = "Password"
+											 class = "form-input password-input"
+											 data-ng-model = "userData.password"/>
+							</div>
+						</div>
+						<button type = "button" class = "button"
+										data-ng-click = "login()">Log in
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
